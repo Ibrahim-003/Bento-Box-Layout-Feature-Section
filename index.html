@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <title>Bento Box Layout Feature Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        black: '#000',
+                        'slate-gray': '#6C727F',
+                        white: '#FFF',
+                        'light-gray': '#F3F4F6'
+                    },
+                    fontFamily:  {
+                        sans: ['Be Vietnam Pro', 'sans-serif'],
+                    },
+                    gridTemplateRows: {
+                        // Complex site-specific row configuration
+                        'layout-md': 'repeat(3, auto)',
+                        'layout-lg': 'repeat(2, auto)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <main class="px-4 lg:px-10 pb-10 max-w-[1280px] mx-auto">
+        <header class="py-10 flex flex-col gap-4">
+            <img src="./assets/images/Bentobox_challenge_logo.svg" alt="bento logo" class="w-9 mx-auto">
+            <h1 class="max-w-[524px] mx-auto text-[32px] text-center font-semibold">Explore Our Essential Features for Effective Data Management</h1>
+            <p class="max-w-[560px] mx-auto text-base text-center text-slate-gray">Explore how our platform empowers organizations to elevate their data strategy, driving innovation and informed
+            decision-making.</p>
+        </header>
+        <section class="p-6 bg-light-gray rounded-xl grid grid-cols-1 grid-rows-5 gap-6 md:grid-cols-2 md:grid-rows-layout-md lg:grid-cols-6 lg:grid-rows-layout-lg">
+            <article class="px-4 py-6 bg-white rounded-xl shadow-md flex flex-col justify-between sm:p-8 sm:flex-row sm:items-center sm:gap-4 md:flex-col md:gap-6 lg:col-span-2">
+                <div class="w-full flex flex-col gap-3">
+                    <h2 class="text-xl font-semibold">
+                        Create high-quality, original content at scale
+                    </h2>
+                    <p class="text-base text-slate-gray">Scale original content production efficiently.</p>
+                </div>
+                <picture class="w-full">
+                    <source media="(min-width: 1024px)" srcset="./assets/images/image_1@2x.png">
+                    <source media="(max-width: 1023px)" srcset="./assets/images/image_1.png">
+                    <img src="./assets/images/image_1.png" alt="high quality ilustration" class="mx-auto">
+                </picture>
+            </article>
+            <article class="px-4 py-6 bg-white rounded-xl shadow-md flex flex-col justify-between sm:p-8 sm:flex-row-reverse sm:items-center sm:gap-4 md:flex-col-reverse md:gap-6 lg:col-span-2">
+                <div class="w-full flex flex-col gap-3">
+                    <h2 class="text-xl font-semibold">
+                        Repurpose existing content across multiple channels and formats (audio, video)
+                    </h2>
+                    <p class="text-base text-slate-gray">Recycle content for divers platforms and create new content.</p>
+                </div>
+                <picture class="w-full">
+                    <source media="(min-width: 1024px)" srcset="./assets/images/image_2@2x.png">
+                    <source media="(max-width: 1023px)" srcset="./assets/images/image_2.png">
+                    <img src="./assets/images/image_2.png" alt="content ilustration" class="mx-auto">
+                </picture>
+            </article>
+            <article class="px-4 py-6 bg-white rounded-xl shadow-md flex flex-col justify-between sm:p-8 sm:flex-row sm:items-center sm:gap-4 md:flex-col md:gap-6 lg:col-span-2">
+                <div class="w-full flex flex-col gap-3">
+                    <h2 class="text-xl font-semibold">
+                        Optimize content for search engines and target audiences
+                    </h2>
+                    <p class="text-base text-slate-gray">Tailer content for SEO and audience engagement.</p>
+                </div>
+                <picture class="w-full">
+                    <source media="(min-width: 1024px)" srcset="./assets/images/image_3@2x.png">
+                    <source media="(max-width: 1023px)" srcset="./assets/images/image_3.png">
+                    <img src="./assets/images/image_3.png" alt="optimization ilustration" class="mx-auto">
+                </picture>
+            </article>
+            <article class="px-4 py-6 bg-white rounded-xl shadow-md flex flex-col justify-between sm:p-8 sm:flex-row-reverse sm:items-center sm:gap-4 md:flex-col-reverse md:gap-6 lg:col-span-3 lg:flex-row-reverse">
+                <div class="w-full flex flex-col gap-3">
+                    <h2 class="text-xl font-semibold">
+                        Automate repetitive marketing tasks and workflows
+                    </h2>
+                    <p class="text-base text-slate-gray">Streamline marketing tasks with automations.</p>
+                </div>
+                <picture class="w-full">
+                    <source media="(min-width: 1024px)" srcset="./assets/images/image_4@2x.png">
+                    <source media="(max-width: 1023px)" srcset="./assets/images/image_4.png">
+                    <img src="./assets/images/image_4.png" alt="automation ilustration" class="mx-auto">
+                </picture>
+            </article>
+            <article class="px-4 py-6 bg-white rounded-xl shadow-md flex flex-col justify-between sm:p-8 sm:flex-row sm:items-center sm:gap-4 md:col-span-2 md:h-fit lg:col-span-3 lg:h-full">
+                <div class="w-full flex flex-col gap-3 lg:w-4/5">
+                    <h2 class="text-xl font-semibold">
+                        Integrate with your favorite marketing tools and platform
+                    </h2>
+                    <p class="text-base text-slate-gray">Seamlessly integrate with preferred marketing tools.</p>
+                </div>
+                <picture class="w-full">
+                    <source media="(min-width: 1024px)" srcset="./assets/images/image_5@2x.png">
+                    <source media="(max-width: 1023px)" srcset="./assets/images/image_5.png">
+                    <img src="./assets/images/image_5.png" alt="integration ilustration" class="mx-auto">
+                </picture>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
